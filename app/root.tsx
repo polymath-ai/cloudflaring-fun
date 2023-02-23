@@ -4,6 +4,8 @@ import {
   LiveReload,
   Meta,
   Outlet,
+  Scripts,
+  ScrollRestoration,
 } from "@remix-run/react";
 
 export const meta: MetaFunction = () => ({
@@ -22,6 +24,8 @@ export default function App() {
       <body>
         <Outlet />
         <LiveReload />
+        <ScrollRestoration />
+        <Scripts />
       </body>
     </html>
   );
